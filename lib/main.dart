@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nishat/task1.dart';
 import 'package:nishat/task2.dart';
+import 'package:nishat/task_2.dart';
 
 void main(){
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: Task2(),
+      home: TaskButton(),
 
     );
   }
