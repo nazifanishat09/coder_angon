@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:nishat/logoScreen.dart';
+import 'package:nishat/project2/ServiceScreen.dart';
+import 'package:nishat/project2/splashScreen2.dart';
+import 'package:nishat/splashScreen.dart';
 import 'package:nishat/task1.dart';
 import 'package:nishat/task2.dart';
 import 'package:nishat/task3.dart';
 import 'package:nishat/task_2.dart';
+
+import 'Loginscreen2.dart';
+import 'homeScreen.dart';
+import 'loginScreen.dart';
 
 void main(){
   runApp(MyApp());
@@ -16,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: Task3(),
+      home:Splashscreen2()
 
     );
   }
