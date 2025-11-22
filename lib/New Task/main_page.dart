@@ -75,7 +75,6 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                   ),
                   child: Row(
-
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(
@@ -105,7 +104,8 @@ class _MainScreenState extends State<MainScreen> {
                             ),
                           ),
                         ),
-                      ),SizedBox(width: 10),
+                      ),
+                      SizedBox(width: 10),
                       Text(
                         "বিচার দিবস",
                         style: TextStyle(
@@ -114,15 +114,65 @@ class _MainScreenState extends State<MainScreen> {
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-
                     ],
                   ),
                 ),
-                Container( height: 340,
-                  width: 370,
-                decoration: BoxDecoration(
-                  color: Color(0xffeed5ce)
-                ),)
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Container(
+                    height: 150,
+                    width: 380,
+                    decoration: BoxDecoration(
+                      color: Color(0xffeed5ce),
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      border: Border.all(width: 1, color: Color(0xff795545)),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "অন্যের জীবন নষ্ট করা মানুষগুলো \n অন্যায় করার সময় ভুলে যায় \n বিচারদিবসের মালিকের কথা!",
+                        style: TextStyle(color: Colors.black, fontSize: 20),
+                      ),
+                    ),
+                  ),
+                ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          color: Color(0xff6a4c3f),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        child: Icon(Icons.content_copy, color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(width: 100,),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Container(
+                        height: 50,
+                        width: 180,
+                        decoration: BoxDecoration(
+                          color: Color(0xff6a4c3f),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        child: Row(
+                          spacing: 10,
+                          children: [
+                            SizedBox(width: 5,),
+                            Icon(Icons.share, color: Colors.white),
+                            Text("শেয়ার করুন...",style: TextStyle(
+                              color: Colors.white,fontSize: 20
+                            ),)
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
